@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather app</title>
+  <link rel="stylesheet" href="./content/css/index.css">
+  <link rel="stylesheet" href="./index/style/output.css" />
+</head>
+<body class="bg-cover bg-center bg-bottom" >
+  <div class="modal1">
+    <div class="modal text-center  text-white   font-medium">
+      <p class="text-white font-black ">Not Found</p>
+      <p >incorrect value</p>
+    </div>
+  </div>
+
+  <div class="app-wrap flex justify-center flex-col min-h-screen  ">
+    <header class="flex justify-center items-center w-full ">
+      <input type="text " autocomplete="off" class="search-box w-full max-w-[280px] border-none text-[20px] font-light rounded-borderInput bg-white/[.3] focus:bg-white/[.6] placeholder:text-black p-pdInput outline-none  transition ease-out duration-500 text[#313131] " " placeholder="Search for a city..." />
+     
+    </header>
+    <button class="btn  bg-sky-700 text-white font border-none font-normal rounded-borderBtn m-mBtn  ">Click</button>
+     
+    <main class="flex-100 p-pdMain flex flex-col justify-center  items-center text-center   ">
+      <section class="location">
+        <div class="city   text-white font-medium text-4xl mb-2 ">Northampton, GB</div>
+        <div class="date text-white text-base ">Thursday 10 January 2020</div>
+      </section>
+      <div class="current flex flex-col justify-center">
+        <div class="temp text-white text-9xl font-black m-mTemp">15<span class="spanTemp">°c</span></div>
+        <div class="weather font-bold text-3xl text-white italic mb-5 ">Sunny</div>
+        <div class="hi-low text-2xl font-medium text-white">13°c / 16°c</div>
+      </div>
+    </main>
+  </div>
+  <script src="./content/js/script.js"></script>
+</body>
+</html>
